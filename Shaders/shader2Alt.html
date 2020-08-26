@@ -109,7 +109,7 @@
 					'uv.y = sin( a ) / r;', 
 					'uv /= 10.0;', 'uv += time * 0.05;', 
 					'vec3 color = texture2D( colorTexture, uv ).rgb;', 
-					'gl_FragColor = vec4( color * r * 10.0, 1.0 );', 
+					'gl_FragColor = vec4((color.r + 0.9 ), color.g, (color.b + 0.8), 1.0);', 
 					'}'];
 
 				var arrayFS3= [
