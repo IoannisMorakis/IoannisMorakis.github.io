@@ -1,0 +1,5 @@
+1. Almuedas que se pueden subir y tirar
+2. altura relativa del piso: asi como para subir escaleras etc...
+3. PLANO ESPECIAL: un plano sobre cual cuando me subo, me mantengo en cima.
+
+THREE.MESH ---> CANNON.SHAPE = https://github.com/donmccurdy/three-to-cannon
