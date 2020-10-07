@@ -204,7 +204,7 @@ function main() {
     var cubeMaterial = new THREE.MeshPhongMaterial( { color: 0x00FF00 } );
     var cubeMesh = new THREE.Mesh(cubeGeo, cubeMaterial);
 	cubeMesh.castShadow = true;
-	cubeMesh.position.set(0,6,-5);;
+	cubeMesh.position.set(0,6,0);;
 	
 	meshes.push(cubeMesh);
     scene.add(cubeMesh);
@@ -475,7 +475,7 @@ function initCannon(){
 	
 	var boxBody = new CANNON.Body({ mass: mass });
 	boxBody.addShape(boxShape);
-	boxBody.position.set(0,6,-10);
+	boxBody.position.set(0,6,0);
 	
 	//boxBody.collisionResponse = 0; // no impact on other bodys
 	//boxBody.addEventListener("collide", function(e){ console.log("collided"); } );
