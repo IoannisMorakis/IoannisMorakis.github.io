@@ -1,0 +1,4 @@
+Sacle (1, 1, 1)
+height: 164
+weight:61,5
+depth: 97
