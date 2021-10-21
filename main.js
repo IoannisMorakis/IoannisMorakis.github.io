@@ -36,8 +36,8 @@ function myFunction() {
 
   if(pat=="Xanthomonas Vesicatoria"){porcen_perdida= 0.7;}
   if(pat=="Alternaria solani"){porcen_perdida= 0.3;}
-  var res3_a= CantidadProductos(porcen_perdida, res1_a, 3);
-  var res4_a= CantidadProductos(res1_a, res3_a);
+  var res3_a= CantidadPerdidas(porcen_perdida, res1_a, 3);
+  var res4_a= CantidadProductosPatogeno(res1_a, res3_a);
   
 
   var old= document.getElementById("myRes1").innerHTML;
