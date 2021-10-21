@@ -41,13 +41,13 @@ function myFunction() {
   
 
   var old= document.getElementById("myRes1").innerHTML;
-  document.getElementById("myRes1").innerHTML= old + "     " + res1_a ;
+  document.getElementById("myRes1").innerHTML= "Cantidad de Plantas Germinadas: " + res1_a ;
   var old= document.getElementById("myRes2").innerHTML;
-  document.getElementById("myRes2").innerHTML= old + "     " + res2_a + " Kg";
+  document.getElementById("myRes2").innerHTML= "Cantidad del producto: " + res2_a + " Kg";
   var old= document.getElementById("myRes3").innerHTML;
-  document.getElementById("myRes3").innerHTML= old + "                  " + res3_a + "Kg";
+  document.getElementById("myRes3").innerHTML= "Perdidas: " + res3_a + " Kg";
   var old= document.getElementById("myRes4").innerHTML;
-  document.getElementById("myRes4").innerHTML= old + res4_a + "Kg";
-
+  document.getElementById("myRes4").innerHTML= "Catidad de Producto total: " + res4_a + " Kg";
+    
   //document.getElementById("p1").innerHTML = "New text!";
 }
