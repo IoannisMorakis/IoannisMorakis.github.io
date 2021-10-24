@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simulador</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <p class="RectangleBar1"></p>
+
+    <img class="Logo" src="../images/Logo.png" alt="Logo"></img>
+
+    <a href="simulador-menu.html" >
+      <img class="menu-icon" src="../images/menu-icon.png" alt="menu-icon"></img>
+    </a>
+
+    <p class="RECULPI">RECULPI</p>
+    <p class="Simulador">Simulador</p>
+
+
+
+    <p class="RectangleBar2"></p>
+    <p class="Valores"> Valores Iniciales </p>
+    <p class="Line"></p>
+
+
+
+    <p class= "Cell Cell1">
+      <input id="Area" type="text" placeholder="Area del Cultivo (metros²)">
+    </p>
+
+    <p class= "Cell Cell2">
+      <input id="Porcentaje" type="text" placeholder="Porcentaje de Germinacion">
+    </p>
+
+    <p class= "Cell Cell3">
+      <select name="Patógeno" id="Patógeno" required>
+        <option value="" disabled selected hidden>Seleccione Patógeno</option>
+        <option value="Phytophthora capsici">Phytophthora capsici</option>
+        <option value="Ralstonia solanacearum">Ralstonia solanacearum </option>
+        <option value="Xanthomonas vesicatoria">Xanthomonas vesicatoria</option>
+        <option value="Alternaria solani">Alternaria solani  </option>
+    
+      </select>
+
+      
+    </p>
+
+
+   
+    <button type="button" class="button"  onclick="myFunction()">Procesar</button>
+    
+  
+    <img class="Inbox-Empty-icon" id="myP1" src="../images/Inbox-Empty-icon.png" alt="Inbox-Empty-icon"></img>
+
+    <p class="SimuladorEmpty" id="myP2">Simulador</p>
+
+    <p class="IngreseValores" id="myP3">Ingrese los valores iniciales para ejecutar la simulación</p>
+
+
+
+
+
+    <div class= "CuadroResultado" id="CuadRes" hidden>
+      <p class= "Res1" id="myRes1"> <b> Cantidad de Plantas Germinadas:     </b></p>
+      <p class= "Res2" id="myRes2"><b> Cantidad del producto:     </b></p>
+      <p class= "Res3" id="myRes3"><b> Perdidas:                  </b></p>
+      <p class= "Res4" id="myRes4"><b> Catidad de Producto total: </b></p>
+    </div>
+    
+    <p class="RectangleBar3"></p>
+
+
+
+
+
+    <p class="Rectangle4"></p>
+
+    <img class="Logo" src="../images/Logo.png" alt="Logo"></img>
+
+    <a href="simulador.html" >
+      <img class="menu-icon" src="../images/menu-icon.png" alt="menu-icon"></img>
+    </a>
+
+    <p class="RECULPI">RECULPI</p>
+    <p class="Simulador">Simulador</p>
+
+
+    <a href="../index.html" >
+      <h1 class="Inicio">Inicio</h1>
+    </a>
+
+    <a href="simulador.html" >
+      <h1 class="Simulacion">Simulación</h1>
+    </a>
+
+    <p class="Creditos">
+      <b>Creditos</b> <br>
+      <br>
+      Ioannis Morakis - <br>
+      m.yannis22@gmail.com <br>
+      Daniel Cavadia  - <br>
+      dan.acppp@gmail.com <br>
+      Zulay Pineda - <br>
+      zulay.pineda.19@gmail.com <br>
+      Prof. Rafael Mejias <br>
+
+    </p>
+
+
+    <p class="Objeto">
+      <b>Objeto de Aprendizaje de Contenidos Abiertos</b> <br>
+      Rendimiento del Cultivo de Pimenton - simulador<br>
+    </p>
+
+
+
+    
+
+    <script src="../main.js"></script>
+  </body>
+</html>
