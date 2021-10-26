@@ -1,0 +1,934 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ 
+
+ p.RECULPI{ 
+  position: absolute;
+  height: 5.92%; 
+  width: 10.46%; 
+  left: 17.5%; 
+  top: 3.65%; 
+  border-radius: nullpx;
+
+ 
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+
+
+
+  
+}
+
+p.Simulador{ 
+  position: absolute;
+  height: 6.06%; 
+  width: 11.16%; 
+  left: 17.5%; 
+  top: 9.57%; 
+  border-radius: nullpx;
+  
+
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: right;
+
+
+}
+
+
+p.Rectangle1{
+  position: absolute;
+  
+  height: 100%; 
+  width: 53.51%;
+  left: 0%;
+  top: 0%;
+
+  background: #008080;
+
+}
+
+p.Rectangle3{
+  position: absolute;
+
+  height: 46.67%; 
+  width: 30.7%; 
+  left: 13.28%; 
+  top: 24.86%;
+  border-radius: 0px;
+
+  border: 15px solid #820000;
+  box-sizing: border-box;
+  border-right-width:0px;
+
+}
+
+p.v1 {
+  position: absolute;
+  left: 42.88%; 
+  top: 24.86%;
+
+  border-left: 15px solid #820000;
+  height: 45px;
+}
+
+p.v2 {
+  position: absolute;
+  left: 42.88%; 
+  top: 62.68%; 
+
+  border-left: 15px solid #820000;
+  height: 45px;
+}
+
+
+
+
+img.pim{
+  position: absolute;
+  height: 100%;
+  width: 46.49%; 
+  left: 53.51%  ; 
+  top: 0%;
+  border-radius: 0px;
+
+
+}
+
+img.Logo{
+  position: absolute;
+  height: 9.64%; 
+  width: 5.64%; 
+  left: 11.2%; 
+  top: 3.65%; 
+  
+  border-radius: 0px;
+
+  
+}
+
+
+img.menu-icon{
+  position: absolute;
+  height: 8.15%; 
+  width: 4.22%; 
+  left: 93.89%; 
+  top: 4.2%; 
+  border-radius: 0px;
+
+
+  
+}
+
+
+
+p.Rendimiento{
+  font-family: 'Roboto', sans-serif;
+  font-size: 72px;
+  position: absolute;
+  height: 24.31%; 
+  width: 50.31%; 
+  left: 18.83%; 
+  top: 32.72%; 
+  border-radius: nullpx;
+  color: white;
+
+ 
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 84px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+
+p.Aprende{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  position: absolute;
+  height: 6.67%; 
+  width: 49.37%; 
+  left: 18.83%; 
+  top: 57.89%; 
+  border-radius: nullpx;
+ 
+  color: white;
+}
+
+
+
+
+
+p.Empezar{
+  position: absolute;
+  height: 2.92%; 
+  width: 15.31%; 
+  left: 69.14%; 
+  top: 84.03%; 
+  
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  color: white;
+
+
+}
+
+
+
+
+p.Rectangle2{
+  position: absolute;
+  
+  height: 9.31%; 
+  width: 16.17%;
+  left: 68.67%; 
+  top: 80.83%; 
+
+
+  background: #008080;
+
+}
+
+
+p.Rectangle4{
+  position: absolute;
+  
+  height: 100%; 
+  width: 100%; 
+  left: 0%;
+  top: 0%;
+
+  background: #008080;
+  opacity: 90%;
+
+}
+
+p.Rectangle4Sim{
+  position: absolute;
+  
+  height: 768px; 
+  width: 100%; 
+  left: 0%;
+  top: 0%;
+
+  background: #008080;
+  opacity: 85%;
+
+}
+
+p.Rectangle5{
+  position: absolute;
+  
+  height: 17.58%;
+  width: 31.41%;
+  left: 14.06%;
+  top: 44.66% ;
+  border-radius: 0px;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300%;
+
+
+  color: white;
+
+  background: #008080;
+
+}
+
+p.Rectangle6{
+  position: absolute;
+  
+  height: 17.58%;
+  width: 31.41%;
+  left: 58.05%  ;
+  top: 44.66% ;
+  border-radius: 0px;
+
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300%;
+
+
+  color: white;
+
+  background: #008080;
+
+}
+
+
+h1.Inicio{
+  
+  position: absolute;
+  height: 6.53%  ; 
+  width: 18.59%  ; 
+  left: 22.81%  ; 
+  top: 36.98%  ; 
+  border-radius: nullpx;
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  color: black;
+}
+
+
+h1.Simulacion{
+  
+  position: absolute;
+  height: 8.19%  ; 
+  width: 18.59%  ; 
+  left: 22.81%  ; 
+  top: 51.29%  ; 
+  border-radius: nullpx;
+
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: center;
+
+
+  color: black;
+}
+
+
+p.Creditos{
+  position: absolute;
+  height: 187px; 
+  width: 313px; 
+  left: 722px; 
+  top: 181px; 
+  border-radius: nullpx;
+
+  font-size: 18px; 
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+
+
+  color: black;
+
+
+
+}
+
+
+p.Objeto{
+  position: absolute;
+  height: 116px; 
+  width: 322px; 
+  left: 718px; 
+  top: 413px; 
+  border-radius: nullpx;
+
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+
+
+  color: black;
+
+
+
+}
+
+b{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+
+p.RectangleBar1{
+  position: absolute;
+
+  height: 17.96875%  ; 
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+
+
+  background: #008080;
+
+}
+
+p.RectangleBar2{
+  position: absolute;
+
+  height: 282px;  /* 544px; */
+  width: 301px; 
+  left: 29px; 
+  top: 156px; 
+  border-radius: 15px;
+
+
+
+  background: #C4C4C4;
+  
+
+}
+
+p.RectangleBar3{
+  position: absolute;
+
+  height: 50px; 
+  width: 100%; 
+  left: 0px; 
+  top: 607px; /*718px;*/ 
+  border-radius: 0px;
+
+
+  background: #000000;
+
+}
+
+p.RectangleBar4{
+  position: absolute;
+
+  height: 6.51%; 
+  width: 100%; 
+  left: 0px; 
+  top: 93.5%; 
+  border-radius: 0px;
+
+
+  background: #000000;
+
+}
+
+p.Valores{
+  position: absolute;
+  height: 33px; 
+  width: 190px; 
+  left: 84px; 
+  top: 176px; 
+  border-radius: nullpx;
+
+
+
+  font-size: 24px; 
+  font-style: normal;
+  font-weight: 400; 
+  line-height: 28px; 
+  letter-spacing: 0em; 
+  text-align: center;
+
+
+
+  color: black;
+
+
+
+}
+
+
+p.Line {
+  position: absolute;
+  height: 0px; 
+  width: 301px; 
+  left: 29px; 
+  top: 220px; 
+  border-radius: nullpx;
+
+  border: 1px solid #000000;
+}
+
+
+.Cell{
+
+  position: absolute; 
+  
+  
+
+  border-radius: nullpx;
+ 
+
+}
+
+.Cell input{
+
+  height: 32px; 
+  width: 190px; 
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  
+  border: 0;
+
+  color: #C4C4C4;
+  background: white;
+  
+
+}
+
+.Cell select{
+
+  height: 32px; 
+  width: 190px; 
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  
+  border: 0;
+
+  color: #686868;
+  background: white; 
+
+}
+
+
+.Cell1{
+  
+  left: 84px; 
+  top: 229px; 
+
+}
+
+
+.Cell2{
+  
+  left: 84px; 
+  top: 282px; 
+
+
+}
+
+
+.Cell3{
+  
+  left: 84px; 
+  top: 333px; 
+
+}
+
+
+.Cell4{
+  
+  left: 84px; 
+  top: 386px; 
+
+}
+
+
+.Cell5{
+  
+  left: 84px; 
+  top: 438px; 
+
+}
+
+
+.Cell6{
+  
+  left: 84px; 
+  top: 492px; 
+
+}
+
+
+.Cell7{
+  
+  left: 84px;
+  top: 544px; 
+
+}
+
+
+
+.Cell8{
+  
+  left: 84px; 
+  top: 596px; 
+
+}
+
+
+
+.button{
+  position: absolute;
+  height: 32px; 
+  width: 95px; 
+  left: 179px; 
+  top: 386px; /*649px;*/ 
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+
+  
+
+  text-decoration: none;
+  display: inline-block;
+  
+  
+  border-radius: 0px;
+
+  background: #008080;
+
+
+}
+
+
+img.Inbox-Empty-icon{
+  position: absolute;
+  height: 90px; 
+  width: 107px; 
+  left: 715px; 
+  top: 226px; /*296px;*/ 
+  border-radius: 0px;
+  
+}
+
+p.SimuladorEmpty{
+  
+  position: absolute;
+  height: 41px; 
+  width: 202px; 
+  left: 667px; 
+  top: 326px; /*396px;*/
+  border-radius: nullpx;
+ 
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+
+
+}
+
+p.IngreseValores{
+  
+  position: absolute;
+  height: 53px; 
+  width: 662px; 
+  left: 438px; 
+  top: 372px; /*442px;*/ 
+  border-radius: nullpx;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+
+
+
+}
+
+
+
+.CuadroResultado{
+  position: absolute;
+
+  height: 282px;
+  width: 900px; 
+  left: 360px; 
+  top: 156px; /*296px; */
+  border-radius: 15px;
+
+
+  /*height: 282px;  
+  width: 301px; 
+  left: 29px; 
+  top: 156px;*/
+
+
+  background: #C4C4C4;
+  
+
+}
+
+
+p.Res1{
+  position: absolute;
+  height: 66px; /**/
+  width: 400px; 
+  left: 50px; 
+  top: 50px; 
+  border-radius: nullpx;
+
+
+
+  font-size: 24px; 
+  font-style: normal;
+  font-weight: 400; 
+  line-height: 28px; 
+  letter-spacing: 0em; 
+  text-align: left;
+
+
+  color: black;
+
+
+  
+}
+
+
+p.Res1Var{
+  position: absolute;
+  height: 66px; /**/
+  width: 400px; 
+  left: 50px; 
+  top: 100px; 
+  border-radius: nullpx;
+
+
+
+  font-size: 24px; 
+  font-style: normal;
+  font-weight: 400; 
+  line-height: 28px; 
+  letter-spacing: 0em; 
+  text-align: left;
+
+
+  color: black;
+
+}
+
+
+
+p.Res2{
+  position: absolute;
+  height: 66px; 
+  width: 400px; 
+  left: 500px; 
+  top: 50px; 
+  border-radius: nullpx;
+
+
+
+  font-size: 24px; 
+  font-style: normal;
+  font-weight: 400; 
+  line-height: 28px; 
+  letter-spacing: 0em; 
+  text-align: left;
+
+
+  color: black;
+
+}
+
+
+p.Res2Var{
+  position: absolute;
+  height: 66px; 
+  width: 400px; 
+  left: 500px; 
+  top: 100px; 
+  border-radius: nullpx;
+
+
+
+  font-size: 24px; 
+  font-style: normal;
+  font-weight: 400; 
+  line-height: 28px; 
+  letter-spacing: 0em; 
+  text-align: left;
+
+
+  color: black;
+
+}
+
+
+p.Res3{
+  position: absolute;
+  height: 66px; 
+  width: 400px; 
+  left: 50px; 
+  top: 150px; 
+  border-radius: nullpx;
+
+
+
+  font-size: 24px; 
+  font-style: normal;
+  font-weight: 400; 
+  line-height: 28px; 
+  letter-spacing: 0em; 
+  text-align: left;
+
+
+  color: black;
+
+}
+
+p.Res3Var{
+  position: absolute;
+  height: 66px; 
+  width: 400px; 
+  left: 50px; 
+  top: 200px; 
+  border-radius: nullpx;
+
+
+
+  font-size: 24px; 
+  font-style: normal;
+  font-weight: 400; 
+  line-height: 28px; 
+  letter-spacing: 0em; 
+  text-align: left;
+
+
+  color: black;
+
+}
+
+
+p.Res4{
+  position: absolute;
+  height: 66px; 
+  width: 400px; 
+  left: 500px; 
+  top: 150px; 
+  border-radius: nullpx;
+
+
+
+  font-size: 24px; 
+  font-style: normal;
+  font-weight: 400; 
+  line-height: 28px; 
+  letter-spacing: 0em; 
+  text-align: left;
+
+
+  color: black;
+
+}
+
+p.Res4Var{
+  position: absolute;
+  height: 66px; 
+  width: 400px; 
+  left: 500px; 
+  top: 200px; 
+  border-radius: nullpx;
+
+
+
+  font-size: 24px; 
+  font-style: normal;
+  font-weight: 400; 
+  line-height: 28px; 
+  letter-spacing: 0em; 
+  text-align: left;
+
+
+  color: black;
+
+}
+
+p.Licencia{
+  position: absolute;
+
+  height: 14px; 
+  width: 300px; 
+  left: 120px; 
+  top: 620px; /*718px;*/ 
+  border-radius: 0px;
+
+
+  
+
+  font-size: 12px; 
+  font-style: normal;
+  font-weight: 400; 
+  line-height: 28px; 
+  letter-spacing: 0em; 
+  text-align: left;
+
+
+  color: white;
+
+}
+
+img.Licencia-icon{
+  position: absolute;
+  
+  left: 10px; 
+  top: 620px; /*718px;*/ 
+  
+  border-radius: 0px;
+
+  
+}
