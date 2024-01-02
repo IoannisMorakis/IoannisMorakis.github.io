@@ -1,0 +1,51 @@
+<p>project-info works!</p>
+
+<h1 class="subTituloText">Datos del Projecto</h1>
+
+<div  class="loginBox">
+
+  <form #loginForm="ngForm" (ngSubmit)="handleRegister(loginForm.value)">
+    <div class="main" >
+
+
+      <!--
+      <div class="input-fields">
+        <span  class="Text">ID:</span>
+        <input name="id" ngModel placeholder="ID" id="id" type="id" class="input-field" [(ngModel)]= "pid" />
+      </div>
+      -->
+
+
+      <div class="input-fields">
+        <span  class="Text">Nombre:</span>
+        <span class="input-field" > {{item.name}}</span>
+      </div>
+
+      <div class="input-fields">
+        <span  class="Text">Owner:</span>
+        <span class="input-field" > {{item.owner}}</span>
+      </div>
+
+      <div class="input-fields" >
+        <span  class="Text">Integrantes:</span>
+        <span class="input-field" > {{item.integrantes}}</span>
+      </div>
+
+      <!--
+        <button type="button" (click)="addElement()">Add</button>
+      -->
+      <div class="input-fields">
+        <span  class="Text">Cliente:</span>
+        <span class="input-field" > {{item.cliente}}</span>
+
+      </div>
+
+
+    </div>
+
+
+  </form>
+</div>
+
+<button class="boton" (click)="editProyecto()">Editar Muestra</button>
+

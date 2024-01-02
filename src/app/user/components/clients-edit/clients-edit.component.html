@@ -1,0 +1,43 @@
+<p>clients-edit works!</p>
+
+<h1 class="subTituloText">Nuevo Cliente</h1>
+
+<div  class="loginBox">
+
+  <form #loginForm="ngForm" (ngSubmit)="handleRegister(loginForm.value)">
+    <div class="main">
+
+
+
+      <div class="input-fields">
+        <span  class="Text">Email:</span>
+        <input name="email" ngModel placeholder="Email" id="emai" type="email" class="input-field" [(ngModel)]= "item.email" />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Nombre:</span>
+        <input name="nombre" ngModel placeholder="Nombre" id="nombre" type="nombre" class="input-field" />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Telefono:</span>
+        <input name="telefono" ngModel placeholder="Telefono" id="telefono" type="telefono" class="input-field" />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Direccion:</span>
+        <input name="direccion" ngModel placeholder="Direccion" id="direccion" type="direccion" class="input-field" />
+      </div>
+
+
+
+
+      <button class="boton">Crear Cliente</button>
+    </div>
+
+
+  </form>
+</div>

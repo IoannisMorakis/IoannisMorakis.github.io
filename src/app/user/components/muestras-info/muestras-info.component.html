@@ -1,0 +1,116 @@
+<p>muestras-info works!</p>
+
+
+<h1 class="subTituloText">Datos de la Muestra</h1>
+
+<div  class="loginBox">
+
+  <form #loginForm="ngForm" (ngSubmit)="handleRegister(loginForm.value)">
+    <div class="main" >
+
+
+      <div class="input-fields">
+        <span  class="Text">Codigo:</span>
+
+        <span class="input-field" > {{item.codigo}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Cliente:</span>
+        <span class="input-field"> {{item.cliente}}</span>
+
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Fecha:</span>
+        <span class="input-field" > {{item.fecha}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Cultivo:</span>
+        <span class="input-field" > {{item.cultivo}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Tipo:</span>
+        <span class="input-field"> {{item.tipo}}</span>
+
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Fitopatógeno:</span>
+        <span class="input-field"> {{item.fitopatogeno}}</span>
+      </div>
+
+      <div class="input-fields">
+        <span  class="Text">Estado:</span>
+        <span class="input-field"> {{item.estado}}</span>
+      </div>
+
+      <div class="input-fields">
+        <span  class="Text">Lote:</span>
+        <span class="input-field"> {{item.lote}}</span>
+      </div>
+
+      <div class="input-fields">
+        <span  class="Text">Repetición:</span>
+        <span class="input-field"> {{item.repeticion}}</span>
+      </div>
+
+
+
+      <div class="input-fields">
+        <span  class="Text">Coordenadas:</span>
+        <span class="input-field"> {{item.coordenadas}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Síntomas:</span>
+        <span class="input-field"> {{item.sintomas}}</span>
+      </div>
+
+
+
+      <div class="input-fields">
+        <span  class="Text">Comentarios:</span>
+        <span class="input-field"> {{item.comentarios}}</span>
+      </div>
+
+    </div>
+
+
+  </form>
+
+
+</div>
+
+
+<button class="boton" (click)="editMuestra()">Editar Muestra</button>
+
+
+
+
+<!--
+<ul>
+  <li *ngFor="let item of data" >
+    <p contenteditable="true">
+    {{ item.codigo }}
+    {{ item.owner }}
+    {{ item.integrantes }}
+    </p>
+    <button >
+      Update
+    </button>
+
+    <button >
+      Delete
+    </button>
+  </li>
+</ul>
+-->

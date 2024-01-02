@@ -1,0 +1,144 @@
+.list{
+  position: absolute;
+  left:25%;
+	top:38%;
+}
+
+
+td {
+  border: 1px solid #000;
+  background: #D9D9D9;
+  padding: 10px;
+}
+
+th{
+  border: 1px solid #000;
+  background: #AAAAAA;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+
+.username{
+  width: 119px;
+  height: 17px;
+  left: 4%;
+  top: 17%;
+  position: absolute;
+  color: #4C9EFF;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+
+
+.logout{
+  width: 128px;
+  height: 23px;
+  left: 4%;
+  top: 23%;
+  position: absolute;
+  color: #4C9EFF;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400; word-wrap: break-word;
+}
+
+
+.scanbutton{
+  width: 153px;
+  height: 36px;
+  left: 49%;
+  top: 30%;
+  position: absolute;
+  background: #4C9EFF;
+  border-radius: 30px;
+}
+
+.scantext{
+  width: 126px;
+  height: 16px;
+  left: 50%;
+  top: 31%;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-family: Verdana;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+
+
+.boton {
+  /*box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);*/
+  border: none;
+  float: right;
+  background-color:rgba(62.00000010430813, 179.000004529953, 194.00000363588333, 1);
+  color:rgba(255, 255, 255, 1);
+  margin: 15px 0px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+}
+
+.subTituloText { /*SubTitulo Texto*/
+	color:rgba(62.00000010430813, 194.00000363588333, 143.00000667572021, 1);
+	position:absolute;
+  margin: 0px;
+  width:300px;
+	height:64px;
+	font-family:Verdana;
+	font-size:48px;
+	letter-spacing:0;
+  left:45%;
+	top:20%;
+}
+
+
+.edit{
+  border: none;
+  background-color: #D9D9D9;
+  width:25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image:url(../../../../assets/Edit.png);
+}
+
+.muestras{
+  border: none;
+  background-color: #D9D9D9;
+  width:25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image:url(../../../../assets/clipboard.png);
+}
+
+
+.salir{
+  cursor: pointer;
+  border: none;
+  background: none;
+  position:absolute;
+  width:20%;
+	height:10%;
+  left: 0%;
+  top: 0%
+}

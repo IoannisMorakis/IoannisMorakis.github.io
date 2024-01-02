@@ -1,0 +1,65 @@
+<p>clients works!</p>
+
+<h1 class="subTituloText">Clientes</h1>
+
+
+<div class="list">
+  <table>
+    <tr>
+      <th> Email </th>
+      <th> Nombre </th>
+      <th> Telefono</th>
+      <th> Direccion </th>
+      <th> </th>
+
+    </tr>
+    <tr *ngFor="let item of data" >
+
+
+      <td>{{ item.email  }}</td>
+      <td >{{ item.nombre }}</td>
+      <td>{{ item.telefono}}</td>
+      <td>{{ item.direccion}}</td>
+
+
+      <td>
+        <!--
+        <button class="detalles" (click)="infoMuestra(item.codigo)"></button>
+        <button class="imprimir"></button>
+        -->
+        <button class="edit" (click)="editMuestra(item.codigo)"></button>
+
+      </td>
+
+    </tr>
+  </table>
+
+
+
+  <button class="boton" id="agregar" (click)="newClients()">
+    Agregar
+  </button>
+
+</div>
+
+<!--
+<ul>
+  <li *ngFor="let item of data" >
+    <p contenteditable="true">
+    {{ item.codigo }}
+    {{ item.owner }}
+    {{ item.integrantes }}
+    </p>
+    <button >
+      Update
+    </button>
+
+    <button >
+      Delete
+    </button>
+  </li>
+</ul>
+-->
+
+
+
