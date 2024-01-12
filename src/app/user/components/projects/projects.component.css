@@ -101,7 +101,7 @@ table {
 	color:rgba(62.00000010430813, 194.00000363588333, 143.00000667572021, 1);
 	position:absolute;
   margin: 0px;
-  width:300px;
+  /*width:300px;*/
 	height:64px;
 	font-family:Verdana;
 	font-size:48px;
@@ -274,7 +274,7 @@ table {
     color:rgba(62.00000010430813, 194.00000363588333, 143.00000667572021, 1);
     position:absolute;
     margin: 0px;
-    width:300px;
+    /*width:300px;*/
     height:64px;
     font-family:Verdana;
     font-size:32px;
