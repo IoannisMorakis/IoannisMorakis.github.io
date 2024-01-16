@@ -1,6 +1,7 @@
 .list{
   position: absolute;
-  left:25%;
+  margin: 10px;
+  left:30%;
 	top:38%;
 }
 
@@ -65,9 +66,11 @@ table {
 .scantext{
   cursor: pointer;
   width: 126px;
+  margin-top: 10px;
+  margin-left: 15px;
   height: 16px;
-  left: 50%;
-  top: 31%;
+  /*left: 50%;
+  top: 31%;*/
   position: absolute;
   text-align: center;
   color: white;
@@ -162,6 +165,7 @@ table {
 
   .list{
     position: absolute;
+    margin: 0px;
     left: 1%;
     top:40%;
     text-overflow: ellipsis;
@@ -234,10 +238,13 @@ table {
   }
 
   .scantext{
-    width: 30%;
-    height: 3%;
-    left: 35%;
-    top: 31%;
+    cursor: pointer;
+    width: 126px;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 16px;
+    /*left: 50%;
+    top: 31%;*/
     position: absolute;
     text-align: center;
     color: white;
