@@ -171,7 +171,8 @@ table {
 
   .list{
     position: absolute;
-    left: 1%;
+    left: 2%;
+    width: 94%;
     top:40%;
     text-overflow: ellipsis;
   }

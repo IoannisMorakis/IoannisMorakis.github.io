@@ -110,6 +110,12 @@ export class MuestrasAllComponent {
     //window.location.href='#/auth/login';
   }
 
+  Barcode(id: any){
+    this.router.navigate(['user/barcode/'+ id]);
+    //window.location.href='#/auth/login';
+  }
+
+
 
 
   async MyQuery(){

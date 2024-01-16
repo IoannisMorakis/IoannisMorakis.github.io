@@ -109,6 +109,7 @@ button{
 }
 
 #usernameText{
+  cursor: pointer;
   width: 20%;
   position:absolute;
   left:80%;

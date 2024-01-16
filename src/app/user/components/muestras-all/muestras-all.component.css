@@ -173,7 +173,7 @@ table {
 
   .list{
     position: absolute;
-    left: 1%;
+    left: 5%;
     top:40%;
     text-overflow: ellipsis;
   }
@@ -317,6 +317,16 @@ table {
     background-image:url(../../../../assets/clipboard.png);
   }
 
+  .imprimir{
+    border: none;
+    background-color: #D9D9D9;
+    width:14px;
+    height: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image:url(../../../../assets/Imprimir.png);
+  }
 
 
   .detalles{

@@ -180,6 +180,20 @@ table {
 
 @media only screen and (max-width: 768px) {
 
+  .projectBlock{
+    width: 40%;
+    height: 25px;
+    background: #3EC28F;
+    color: white;
+    padding-top: 10px;
+    font-family:Verdana;
+    text-align: center;
+    font-size:14px;
+    font-weight: bold;
+    letter-spacing:0;
+    cursor: pointer;
+  }
+
   .list{
     position: absolute;
     left: 1%;

@@ -13,6 +13,8 @@ import { MuestrasAllComponent } from './component/muestras-all/muestras-all.comp
 import { MuestrasInfoComponent } from './component/muestras-info/muestras-info.component';
 import { UnidadProduccionAllComponent } from './component/unidad-produccion-all/unidad-produccion-all.component';
 import { UnidadProduccionInfoComponent } from './component/unidad-produccion-info/unidad-produccion-info.component';
+import { PerfilComponent } from './component/perfil/perfil.component';
+import { PerfilEditComponent } from './component/perfil-edit/perfil-edit.component';
 
 LOAD_WASM().subscribe((res: any) => console.log('LOAD_WASM', res))
 
@@ -24,7 +26,9 @@ LOAD_WASM().subscribe((res: any) => console.log('LOAD_WASM', res))
     MuestrasAllComponent,
     MuestrasInfoComponent,
     UnidadProduccionAllComponent,
-    UnidadProduccionInfoComponent
+    UnidadProduccionInfoComponent,
+    PerfilComponent,
+    PerfilEditComponent
   ],
   imports: [
     ClientRoutingModule,

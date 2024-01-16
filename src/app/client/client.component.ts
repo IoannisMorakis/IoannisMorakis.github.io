@@ -39,6 +39,12 @@ export class ClientComponent {
     this.router.navigate(['client/projects']);
     //window.location.href='#/auth/login';
   }
+
+  Perfil(){
+
+    this.router.navigate(['client/perfil-edit']);
+    //window.location.href='#/auth/login';
+  }
   Muestras(){
 
     this.router.navigate(['client/muestras-all']);

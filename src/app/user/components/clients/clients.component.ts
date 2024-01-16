@@ -95,8 +95,8 @@ export class ClientsComponent {
     //window.location.href='#/auth/login';
   }
 
-  editMuestra(id: any){
-    this.router.navigate(['user/muestras-edit/'+ id]);
+  editClients(id: any){
+    this.router.navigate(['user/clients-edit/'+ id]);
     //window.location.href='#/auth/login';
   }
 

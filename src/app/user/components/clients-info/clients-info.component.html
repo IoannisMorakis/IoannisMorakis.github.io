@@ -1,1 +1,39 @@
 <p>clients-info works!</p>
+
+<h1 class="subTituloText">Informacion del Cliente</h1>
+
+<div  class="loginBox">
+
+  <form #loginForm="ngForm" (ngSubmit)="handleRegister(loginForm.value)">
+    <div class="main">
+
+
+
+      <div class="input-fields">
+        <span  class="Text">Email:</span>
+        <span class="input-field" > {{item.email}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Nombre:</span>
+        <span class="input-field" > {{item.nombre}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Telefono:</span>
+        <span class="input-field" > {{item.telefono}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Direccion:</span>
+        <span class="input-field" > {{item.direccion}}</span>
+      </div>
+
+    </div>
+
+
+  </form>
+</div>

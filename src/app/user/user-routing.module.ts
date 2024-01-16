@@ -19,6 +19,8 @@ import { UnidadProduccionInfoComponent } from './components/unidad-produccion-in
 import { ClientsComponent } from './components/clients/clients.component';
 import { ClientsNewComponent } from './components/clients-new/clients-new.component';
 import { UnidadProduccionAllComponent } from './components/unidad-produccion-all/unidad-produccion-all.component';
+import { ClientsEditComponent } from './components/clients-edit/clients-edit.component';
+import { ClientsInfoComponent } from './components/clients-info/clients-info.component';
 
 
 const routes: Routes = [
@@ -41,6 +43,8 @@ const routes: Routes = [
     {path: 'unidad-produccion-all', component:UnidadProduccionAllComponent},
     {path:'clients', component:ClientsComponent},
     {path:'clients-new', component:ClientsNewComponent},
+    {path:'clients-edit/:id', component:ClientsEditComponent},
+    {path:'clients-info/:id', component:ClientsInfoComponent},
     {path: 'scan', component:ScanComponent}
 
   ]}

@@ -25,7 +25,7 @@ export class ProjectsComponent {
     //console.log(gauth);
     onAuthStateChanged(gauth, (user) => {
       if (user) {
-        //console.log(user.email);
+        console.log(user.email);
 
         if(user.email){this.email= user.email;}
       }

@@ -1,20 +1,24 @@
 import { Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
-import { Auth } from '@angular/fire/auth';
-import { Firestore, collection, deleteDoc, doc, getDocs, query, setDoc, where } from '@angular/fire/firestore';
+import { Auth, getAuth, onAuthStateChanged } from '@angular/fire/auth';
+import { Firestore, collection, deleteDoc, doc, getDocs, query, setDoc, updateDoc, where } from '@angular/fire/firestore';
 import { ActivatedRoute, Router } from '@angular/router';
 
-@Component({
-  selector: 'app-clients-info',
-  templateUrl: './clients-info.component.html',
-  styleUrls: ['./clients-info.component.css']
-})
-export class ClientsInfoComponent {
 
+@Component({
+  selector: 'app-perfil-edit',
+  templateUrl: './perfil-edit.component.html',
+  styleUrls: ['./perfil-edit.component.css']
+})
+export class PerfilEditComponent {
   title = 'gestion-de-muestras-de-campo';
   public data: any = []
-  public res: any;
+  public res: any = "";
   public item: any;
-  public text: any;
+  public x: any;
+  public pid: any;
+  public static text: string = "";
+  public email: string ="";
+
 
   @ViewChild('geo') geo: any;//ElementRef | undefined;
   public htmlToAdd: any;
@@ -26,27 +30,46 @@ export class ClientsInfoComponent {
     this.MyQuery();
   }
 
-  ngOnInit(): void {
+  /*ngOnInit(): void {
     this.route.params.subscribe(param =>{
-      this.text=param['id'];
-      console.log(param);
-      console.log(param['id']);
+      //this.x=param['id'];
+      //console.log(param);
+      //console.log(param['id']);
       //this.generateBarcode(param);
 
     })
+
     this.getData();
     this.MyQuery();
 
-  }
+  }*/
 
   handleRegister(value: any){
-     this.addData(value);
+    //console.log(value);
+    this.addData(value);
   }
 
-  addData(value: any) {
+  async addData(value: any) {
     //const dbInstance = collection(this.firestore, 'users');
-    const dbInstance = doc(this.firestore, 'muestras', value.codigo);
-    setDoc(dbInstance, value)
+    console.log(value);
+    const dbInstance = doc(this.firestore, 'clientes', value.codigo);
+
+    updateDoc(dbInstance,
+      {
+        codigo: value.codigo,
+        cliente: value.cliente,
+        fecha: value.fecha,
+        cultivo: value.cultivo,
+        tipo: value.tipo,
+        fitopatogeno: value.fitopatogeno,
+        estado: value.estado,
+        coordenadas: value.coordenadas,
+        sintomas: value.sintomas,
+        comentarios: value.comentarios,
+        project: this.pid
+      }
+
+      )
       .then(() => {
 
         alert('Data Sent')
@@ -54,18 +77,22 @@ export class ClientsInfoComponent {
       .catch((err) => {
         alert(err.message)
       })
-      console.log(value.comentarios)
+      console.log(this.pid)
+
 
   }
 
   getData() {
-    const dbInstance = collection(this.firestore, 'muestras');
+
+
+    const dbInstance = collection(this.firestore, 'clientes');
     getDocs(dbInstance)
       .then((response) => {
         this.data = [...response.docs.map((item) => {
           return { ...item.data(), id: item.id }
         })]
       })
+
   }
 
 
@@ -87,7 +114,7 @@ export class ClientsInfoComponent {
     //this.geo=text;
     var x = position.coords.latitude;
     var y = position.coords.longitude;
-    //MuestrasNewComponent.text = x+", "+ y;
+    PerfilEditComponent.text = x+", "+ y;
     //console.log(MuestrasNewComponent.text);
 
 
@@ -116,7 +143,7 @@ export class ClientsInfoComponent {
       console.log("error");
     }
     setTimeout(() => {
-      //this.res= MuestrasNewComponent.text;
+      this.res= PerfilEditComponent.text;
       console.log(this.res);
       }
       ,1000);
@@ -127,8 +154,10 @@ export class ClientsInfoComponent {
 
 
   async MyQuery(){
-    let str=this.text;
-    const q = query(collection(this.firestore, "muestras"), where("codigo", "==",str));
+
+    /*
+    let str=this.x;
+    const q = query(collection(this.firestore, "clientes"), where("email", "==",str));
 
     const querySnapshot = await getDocs(q);
     if(!querySnapshot.empty){
@@ -136,15 +165,75 @@ export class ClientsInfoComponent {
         // doc.data() is never undefined for query doc snapshots
         this.item=doc.data();
         console.log(doc.id, " => ", doc.data());
+        //
+        this.res=this.item.coordenadas;
+        this.pid=this.item.project;
       });
     }
+    */
 
-  }
+    //
 
-  editMuestra(){
-    let str=this.text;
-    this.router.navigate(['user/muestras-edit/'+ str]);
-    //window.location.href='#/auth/login';
+
+    const gauth = getAuth();
+    let temail: string;
+    temail="";
+    console.log(gauth);
+    onAuthStateChanged(gauth, async (user) => {
+      if (user) {
+        console.log(user.email);
+        if(user.email){
+          temail =user.email;
+
+          //console.log(temail);
+          //email="giorgosmorakis@hotmail.com";
+          //console.log(temail == "giorgosmorakis@hotmail.com");
+
+          const q = query(collection(this.firestore, "clientes"), where("email", "==", temail));
+
+          getDocs(q)
+          .then((response) => {
+            this.data = [...response.docs.map((item) => {
+              return { ...item.data(), id: item.id }
+
+            })]
+
+          });
+
+
+
+          // /*
+          const querySnapshot = await getDocs(q)
+          console.log(querySnapshot);
+          querySnapshot.forEach((doc) => {
+            // doc.data() is never undefined for query doc snapshots
+            this.item=doc.data();
+            this.pid=doc.id;
+            console.log(doc.id, " => ", doc.data());
+            console.log("here2");
+            //this.list= doc;
+            //this.data=doc;
+          });
+          console.log(this.data.length);
+          console.log(this.data);
+          console.log(this.data[0].email);
+          // */
+
+
+        }
+
+
+
+      }
+
+    });
+
+
+
+
+
+
+
   }
 
 
@@ -154,16 +243,20 @@ export class ClientsInfoComponent {
   */
 
   deleteData(id: string) {
-    const dataToDelete = doc(this.firestore, 'users', id);
+    let str=this.x;
+    const dataToDelete = doc(this.firestore, 'clientes', str);
+    //console.log(id);
+    //console.log(dataToDelete);
     deleteDoc(dataToDelete)
     .then(() => {
       alert('Data Deleted');
-      this.getData()
+      //this.getData()
+      this.router.navigate(['user/muestras/'+this.pid]);
     })
     .catch((err) => {
       alert(err.message)
     })
-  }
 
+  }
 
 }
