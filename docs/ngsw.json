@@ -1,0 +1,129 @@
+{
+  "configVersion": 1,
+  "timestamp": 1705908434437,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.01cc9f1d5a73d8f9.js",
+        "/manifest.webmanifest",
+        "/polyfills.b9b0836bf28a6f14.js",
+        "/runtime.ae1b2e509d97564a.js",
+        "/styles.ef46db3751d8e999.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Edit.1c3b33dbc7a0ce7c.png",
+        "/Imprimir.5707a7d8e20080ab.png",
+        "/assets/Edit.png",
+        "/assets/EditList.png",
+        "/assets/Imprimir.png",
+        "/assets/Logo-2.jpg",
+        "/assets/Logo-3.png",
+        "/assets/Logo-5-Edit.png",
+        "/assets/Scan.png",
+        "/assets/Ubicacion.png",
+        "/assets/clipboard-pen.png",
+        "/assets/clipboard.png",
+        "/assets/home.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/image_7.png",
+        "/assets/info.png",
+        "/assets/logo_ucv_bg2_1.png",
+        "/assets/menu.png",
+        "/assets/more-symbol.png",
+        "/assets/share.png",
+        "/clipboard.008357a0b24034e8.png",
+        "/home.a5ce65d54c28e165.png",
+        "/image_7.2e20c6c16e8ce206.png",
+        "/info.f631e6664ac6fa77.png",
+        "/logo_ucv_bg2_1.32a61806277cba42.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/Edit.1c3b33dbc7a0ce7c.png": "1c9cdc3ec69ac8556c319dd90e83108fd52f98c7",
+    "/Imprimir.5707a7d8e20080ab.png": "cedeee2afb743470a74d5ada563fe11d6c910389",
+    "/assets/Edit.png": "1c9cdc3ec69ac8556c319dd90e83108fd52f98c7",
+    "/assets/EditList.png": "3d75280861b7afdcd382ba61ee95ff336c5912d5",
+    "/assets/Imprimir.png": "cedeee2afb743470a74d5ada563fe11d6c910389",
+    "/assets/Logo-2.jpg": "5c88fa12bbbfbbe03af86a945a6dec5ce0da9539",
+    "/assets/Logo-3.png": "992dc1f4c57681b4b071b5d76dd180439303acdf",
+    "/assets/Logo-5-Edit.png": "cb559809a54ed7372d2bc77cf171ef759dafc933",
+    "/assets/Scan.png": "c6060d13074019621c9dda3389e37c1946957bb4",
+    "/assets/Ubicacion.png": "5730e75b79915e7f6427bdf9193ba47bceee6487",
+    "/assets/clipboard-pen.png": "c3b691a4b6dfbbade36bdfbba44ba550bac26e16",
+    "/assets/clipboard.png": "2b85200774157c9e502d1c039fe871586be2f660",
+    "/assets/home.png": "28ac3230b9a7621ae010c60c881e63f8c7c85fd0",
+    "/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/assets/image_7.png": "221e1a0bcfde3fc18fb2e367f405497c64b748a3",
+    "/assets/info.png": "9de63dca797b8e77bd7e2ffea58f77d88c605854",
+    "/assets/logo_ucv_bg2_1.png": "5f4ff5044ce5402244fab3de3c0668dbb4c092e6",
+    "/assets/menu.png": "7d72dff08a6fcbbd61806b4bb40bd749864d9214",
+    "/assets/more-symbol.png": "cb1e99390054891643ad6c4a01a47af012fc243f",
+    "/assets/share.png": "405f0c099f31c80a91ed0a3fbfc23c3c7e531fdf",
+    "/clipboard.008357a0b24034e8.png": "2b85200774157c9e502d1c039fe871586be2f660",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/home.a5ce65d54c28e165.png": "28ac3230b9a7621ae010c60c881e63f8c7c85fd0",
+    "/image_7.2e20c6c16e8ce206.png": "221e1a0bcfde3fc18fb2e367f405497c64b748a3",
+    "/index.html": "ecd457a676ab634b436ec88b2bdf740e7e3b079d",
+    "/info.f631e6664ac6fa77.png": "9de63dca797b8e77bd7e2ffea58f77d88c605854",
+    "/logo_ucv_bg2_1.32a61806277cba42.png": "5f4ff5044ce5402244fab3de3c0668dbb4c092e6",
+    "/main.01cc9f1d5a73d8f9.js": "57d504b2dfa57151aa27959a2f8d0788be1fcde5",
+    "/manifest.webmanifest": "acdb449ff469b1a5ff954cb1e0a979f032e4c954",
+    "/polyfills.b9b0836bf28a6f14.js": "a8d1c546442d6c2033d6300b7b20971b1e039f28",
+    "/runtime.ae1b2e509d97564a.js": "9af2ff527937208b90b010cf3c4ef1f4c482a6b8",
+    "/styles.ef46db3751d8e999.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

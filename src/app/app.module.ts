@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AuthModule } from './auth/auth.module';
@@ -22,6 +22,7 @@ import { NgxScannerQrcodeModule, LOAD_WASM } from 'ngx-scanner-qrcode';
 import { SafePipe } from './safe.pipe';
 import { RouterModule } from '@angular/router';
 import { ClientModule } from './client/client.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 LOAD_WASM().subscribe((res: any) => console.log('LOAD_WASM', res))
 
@@ -53,7 +54,13 @@ LOAD_WASM().subscribe((res: any) => console.log('LOAD_WASM', res))
     UserModule,
     AdminModule,
     ClientModule,
-    NgxScannerQrcodeModule
+    NgxScannerQrcodeModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [
     {provide: LocationStrategy, useClass: HashLocationStrategy}
