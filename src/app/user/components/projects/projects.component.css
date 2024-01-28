@@ -339,4 +339,35 @@ table {
   }
 
 
+
+  .scanbutton{
+    cursor: pointer;
+    width: 153px;
+    height: 36px;
+    left: 30%;
+    top: 30%;
+    position: absolute;
+    background: #4C9EFF;
+    border-radius: 30px;
+  }
+
+  .scantext{
+    cursor: pointer;
+    width: 126px;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 16px;
+    /*left: 50%;
+    top: 31%;*/
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+
+
+
 }
