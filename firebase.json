@@ -1,9 +1,0 @@
-{
-  "hosting": [
-    {
-      "target": "gestion-muestras",
-      "source": ".",
-      "frameworksBackend": {}
-    }
-  ]
-}
