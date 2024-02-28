@@ -1,0 +1,77 @@
+<p>unidad-produccion-new works!</p>
+
+<h1 class="subTituloText">Nueva Unidad</h1>
+
+<div  class="loginBox">
+
+  <form #loginForm="ngForm" (ngSubmit)="handleRegister(loginForm.value)">
+    <div class="main">
+
+
+      <div class="input-fields">
+        <span  class="Text">Codigo:</span>
+        <input name="codigo" ngModel placeholder="codigo" id="codigo" type="codigo" class="input-field"/>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Cliente:</span>
+        <input name="cliente" ngModel placeholder="Cliente" id="cliente" type="cliente" class="input-field" />
+      </div>
+
+      <div class="input-fields">
+        <span  class="Text">Coordenadas:</span>
+        <input name="coordenadas" ngModel placeholder="Coordenadas" id="coordenadas" type="coordenadas" class="input-field" [(ngModel)]="res" />
+        <div class="bUbicacion" (click)="getLocation()"><img src="../../../../assets/Ubicacion.png" alt="U"></div>
+      </div>
+
+      <div class="input-fields">
+        <span  class="Text">Localidad:</span>
+        <input name="localidad" ngModel placeholder="Localidad" id="localidad" type="localidad" class="input-field" />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Municipio:</span>
+        <input name="municipio" ngModel placeholder="Municipio" id="municipio" type="municipio" class="input-field" />
+      </div>
+
+      <div class="input-fields">
+        <span  class="Text">Estado:</span>
+        <input name="estado" ngModel placeholder="Estado" id="estado" type="estado" class="input-field" />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Altitud:</span>
+        <input name="altitud" ngModel placeholder="Altitud" id="altitud" type="altitud" class="input-field" />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Temperaturas Máximas:</span>
+        <input name="tempmax" ngModel placeholder="Temperaturas Máximas" id="tempmax" type="tempmax" class="input-field" />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Temperaturas Mínimas:</span>
+        <input name="tempmin" ngModel placeholder="Temperaturas Mínimas" id="tempmin" type="tempmin" class="input-field" />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Precipitación:</span>
+        <input name="precipitacion" ngModel placeholder="Precipitación" id="precipitacion" type="precipitacion" class="input-field" />
+      </div>
+
+
+
+
+
+      <button class="boton">Crear Unidad</button>
+    </div>
+
+
+  </form>
+</div>

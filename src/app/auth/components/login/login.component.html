@@ -1,0 +1,29 @@
+<p>login works!</p>
+
+<button class="salir" (click)="Salir()">
+</button>
+
+<!--
+<div>
+  <button id="signup" (click)= "Signup()">Sign up</button>
+</div>
+-->
+
+<div  class="loginBox"></div>
+<span  class="loginTile">Iniciar Sesión</span>
+<div  class="lineBlack"></div>
+
+<form #loginForm="ngForm" (ngSubmit)="handleLogin(loginForm.value)">
+    <div class="main">
+      <div class="input-fields">
+        <span  class="userText">Email:</span>
+          <input name="email" ngModel placeholder="Email" id="email" type="email" class="input-field" />
+      </div>
+      <div class="input-fields">
+        <span  class="claveText">Clave:</span>
+          <input name="password" ngModel placeholder="Password" id="password" type="password" class="input-field" />
+      </div>
+
+      <button class="boton">Log In</button>
+    </div>
+</form>

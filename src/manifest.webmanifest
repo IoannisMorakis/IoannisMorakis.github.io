@@ -1,59 +1,28 @@
 {
-  "name": "angular-app",
-  "short_name": "angular-app",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Gestion de Muestras",
+  "short_name": "Gestion Muestrass",
+  "theme_color":"#FFFFFF",
+  "background_color":"#FFFFFF",
   "display": "standalone",
+  "orientation": "portrait",
   "scope": "./",
   "start_url": "./",
   "icons": [
     {
-      "src": "assets/example-1.png",
-      "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "maskable any"
+        "src": "./assets/Logo-3.png",
+        "size": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
     },
     {
-      "src": "assets/example-1.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "maskable any"
+        "src": "./assets/Logo-3.png",
+        "size": "384x384",
+        "type": "image/png"
     },
     {
-      "src": "assets/example-1.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "assets/example-1.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "assets/example-1.png",
-      "sizes": "152x152",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "assets/example-1.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "assets/example-1.png",
-      "sizes": "384x384",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "assets/example-1.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable any"
+        "src": "./assets/Logo-3.png",
+        "size": "512x512",
+        "type": "image/png"
     }
   ]
 }

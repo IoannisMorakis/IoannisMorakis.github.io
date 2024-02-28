@@ -1,0 +1,119 @@
+<p>unidad-produccion-edit works!</p>
+
+<h1 class="subTituloText">Editar Unidad</h1>
+
+<div  class="loginBox">
+
+  <form #loginForm="ngForm" (ngSubmit)="handleRegister(loginForm.value)">
+    <div class="main" >
+
+
+      <div class="input-fields">
+        <span  class="Text">Codigo:</span>
+
+        <input name="codigo" ngModel placeholder="codigo" id="codigo" type="codigo" class="input-field" [(ngModel)]= "item.codigo" />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Cliente:</span>
+        <input name="cliente" ngModel placeholder="Cliente" id="cliente" type="cliente" class="input-field" [(ngModel)]= "item.cliente" />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Fecha:</span>
+        <input name="fecha" ngModel placeholder="Fecha" id="fecha" type="fecha" class="input-field" [(ngModel)]= "item.fecha"  />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Cultivo:</span>
+        <input name="cultivo" ngModel placeholder="Cultivo" id="cultivo" type="cultivo" class="input-field" [(ngModel)]= "item.cultivo"  />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Tipo:</span>
+        <input list="tipos" name="tipo" ngModel placeholder="Tipo" id="tipo" type="tipo" class="input-field" [(ngModel)]= "item.tipo" >
+        <datalist id="tipos">
+          <option value="Hibrido">
+          <option value="Variedad">
+          <option value="Clone">
+        </datalist>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Fitopatógeno:</span>
+        <input list="fitopatogenos" name="fitopatogeno" ngModel placeholder="Fitopatógeno" id="fitopatogeno" type="fitopatogeno" class="input-field" [(ngModel)]= "item.fitopatogeno" />
+        <datalist id="fitopatogenos">
+          <option value="Hongos">
+          <option value="Bacterias">
+          <option value="Virus">
+        </datalist>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Estado:</span>
+        <input name="estado" ngModel placeholder="Estado" id="estado" type="estado" class="input-field" [(ngModel)]= "item.estado"  />
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Coordenadas:</span>
+        <input name="coordenadas" ngModel placeholder="Coordenadas" id="coordenadas" type="coordenadas" class="input-field" [(ngModel)]="res" />
+        <div class="bUbicacion" (click)="getLocation()"><img src="../../../../assets/Ubicacion.png" alt="U"></div>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Síntomas:</span>
+        <!-- <input name="síntomas" ngModel placeholder="Síntomas" id="síntomas" type="síntomas" class="input-field" />-->
+        <textarea name="sintomas" ngModel placeholder="Síntomas" id="sintomas"  rows="4" cols="50" [(ngModel)]= "item.sintomas" ></textarea>
+      </div>
+
+
+
+      <div class="input-fields">
+
+        <span  class="Text">Comentarios:</span>
+
+        <!--<input name="comentarios" ngModel placeholder="Comentarios" id="comentarios" type="comentarios" class="input-field" /> -->
+        <textarea name="comentarios" ngModel placeholder="Comentarios" id="comentarios"  rows="4" cols="50" [(ngModel)]= "item.comentarios" > </textarea>
+      </div>
+
+
+
+
+      <button class="boton">Editar Muestra</button>
+
+      <button class="botonrojo" (click)="deleteData(item.id)">
+        Delete
+      </button>
+    </div>
+
+
+  </form>
+</div>
+
+
+<!--
+<ul>
+  <li *ngFor="let item of data" >
+    <p contenteditable="true">
+    {{ item.codigo }}
+    {{ item.owner }}
+    {{ item.integrantes }}
+    </p>
+    <button >
+      Update
+    </button>
+
+    <button >
+      Delete
+    </button>
+  </li>
+</ul>
+-->

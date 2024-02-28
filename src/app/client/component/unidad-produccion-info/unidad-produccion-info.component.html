@@ -1,0 +1,98 @@
+<p>unidad-produccion-info works!</p>
+
+<h1 class="subTituloText">Datos de la Muestra</h1>
+
+<div  class="loginBox">
+
+  <form #loginForm="ngForm" (ngSubmit)="handleRegister(loginForm.value)">
+    <div class="main" >
+
+
+      <div class="input-fields">
+        <span  class="Text">Codigo:</span>
+        <span class="input-field" > {{item.codigo}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Cliente:</span>
+        <span class="input-field"> {{item.cliente}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Coordenadas:</span>
+        <span class="input-field"> {{item.coordenadas}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Localidad:</span>
+        <span class="input-field"> {{item.localidad}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Municipio:</span>
+        <span class="input-field"> {{item.municipio}}</span>
+      </div>
+
+      <div class="input-fields">
+        <span  class="Text">Estado:</span>
+        <span class="input-field"> {{item.cliente}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Altitud:</span>
+        <span class="input-field"> {{item.altitud}}</span>
+      </div>
+
+
+
+      <div class="input-fields">
+        <span  class="Text">Temperaturas Máximas:</span>
+        <span class="input-field"> {{item.tempmax}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Temperaturas Mínimas:</span>
+        <span class="input-field"> {{item.tempmin}}</span>
+      </div>
+
+
+      <div class="input-fields">
+        <span  class="Text">Precipitación:</span>
+        <span class="input-field"> {{item.precipitacion}}</span>
+      </div>
+
+    </div>
+
+
+  </form>
+
+
+</div>
+
+
+
+<!--
+<ul>
+  <li *ngFor="let item of data" >
+    <p contenteditable="true">
+    {{ item.codigo }}
+    {{ item.owner }}
+    {{ item.integrantes }}
+    </p>
+    <button >
+      Update
+    </button>
+
+    <button >
+      Delete
+    </button>
+  </li>
+</ul>
+-->
+

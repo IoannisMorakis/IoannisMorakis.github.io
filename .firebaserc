@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "gestion-de-muestras-de-campo": {
+      "hosting": {
+        "gestion-muestras": [
+          "gestion-de-muestras-de-campo"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "gestion-de-muestras-de-campo"
+  }
+}

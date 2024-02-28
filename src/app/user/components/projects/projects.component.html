@@ -1,0 +1,70 @@
+<p>projects works!</p>
+
+
+
+
+<div class="scanbutton">
+<div class="scantext" (click)="Scan()">SCAN</div>
+</div>
+
+
+<h1 class="subTituloText">Proyectos</h1>
+
+
+<div class="list">
+  <table>
+    <tr>
+      <th> Nombre </th>
+      <th> Dueño </th>
+      <th class="integrantes" > Integrantes</th>
+      <th> Clientes </th>
+      <th> </th>
+
+    </tr>
+    <tr *ngFor="let item of data" >
+
+
+      <td>{{ item.name  }}</td>
+      <td >{{ item.owner }}</td>
+      <td class="integrantes">{{ item.integrantes}}</td>
+      <td>{{ item.cliente }}</td>
+
+      <td>
+
+        <button class="muestras" (click)="Unidades( item.name)"></button>
+        <button class="detalles" (click)="infoProject(item.name)"></button>
+        <button class="edit" (click)="editProyecto(item.name)"></button>
+
+
+      </td>
+
+    </tr>
+  </table>
+
+
+
+  <button class="boton" id="agregar" (click)="newProject()">
+    Agregar
+  </button>
+
+</div>
+
+<!--
+<ul>
+  <li *ngFor="let item of data" >
+    <p contenteditable="true">
+    {{ item.name }}
+    {{ item.owner }}
+    {{ item.integrantes }}
+    {{ item.client }}
+    </p>
+    <button >
+      Update
+    </button>
+
+    <button >
+      Delete
+    </button>
+  </li>
+</ul>
+-->

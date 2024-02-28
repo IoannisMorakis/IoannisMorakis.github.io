@@ -1,0 +1,37 @@
+<p>client works!</p>
+
+<div  class="navbar">
+
+  <div  class="tituloBox"><span  class="tituloText">Gestion de Muestras</span></div>
+  <div  class="logoCiens"></div>
+  <div  class="logoUcv"></div>
+
+  <div  class="homeBox">
+    <span  class="homeText">Home</span>
+  </div>
+
+</div>
+
+<button class="salir" (click)="Home()"></button>
+
+<div class="navbar2">
+  <div class="navbar2Box" ></div>
+  <!--
+  <div style="width: 47px; height: 0px; transform: rotate(90deg); transform-origin: 0 0; border: 2px white solid"></div>
+  <div style="width: 47px; height: 0px; transform: rotate(90deg); transform-origin: 0 0; border: 2px white solid"></div>
+  <div style="width: 47px; height: 0px; transform: rotate(90deg); transform-origin: 0 0; border: 2px white solid"></div>
+  <div style="width: 47px; height: 0px; transform: rotate(90deg); transform-origin: 0 0; border: 2px white solid"></div>
+  <div style="width: 47px; height: 0px; transform: rotate(90deg); transform-origin: 0 0; border: 2px white solid"></div>
+  -->
+  <div class="navbar2Text" id="cerrarText" (click)="handleSignOut()">CERRAR SESIÓN</div>
+
+  <div class="navbar2Text" id="usernameText" (click)="Perfil()">USUARIO</div>
+  <div class="navbar2Text" id="ProyectosText" (click)="Projectos()">PROYECTOS</div>
+  <div class="navbar2Text" id="MuestrasText" (click)="Muestras()">MUESTRAS</div>
+  <div class="navbar2Text" id="UnidadText" (click)="Unidad()">UNIDADES</div>
+
+
+</div>
+
+<router-outlet></router-outlet>
+

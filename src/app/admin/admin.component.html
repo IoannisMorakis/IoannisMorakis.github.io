@@ -1,0 +1,78 @@
+<p>admin works!</p>
+
+<div  class="navbar">
+
+  <div  class="tituloBox"><span  class="tituloText">Gestion de Muestras</span></div>
+  <div  class="logoCiens"></div>
+  <div  class="logoUcv"></div>
+
+  <div  class="homeBox">
+    <span  class="homeText">Home</span>
+  </div>
+
+</div>
+
+<button class="salir" (click)="Home()"></button>
+
+<div class="navbar2">
+  <div class="navbar2Box" ></div>
+
+  <div class="navbar2Text" id="cerrarText" (click)="handleSignOut()">CERRAR SESIÓN</div>
+
+  <!--
+  <div class="navbar2Text" id="usernameText">USUARIO</div>
+  <div class="navbar2Text" id="ProyectosText" >PROYECTOS</div>
+  <div class="navbar2Text" id="MuestrasText" >MUESTRAS</div>
+  <div class="navbar2Text" id="ClientesText">CLIENTES</div>
+  -->
+
+</div>
+
+
+
+
+<h1 class="subTituloText">Usuarios</h1>
+
+<div class="list">
+  <table>
+    <tr>
+
+      <!--<th> Nombre </th>-->
+      <th> Email </th>
+      <!--<th> Password </th>-->
+      <th> Role </th>
+      <th> </th>
+    </tr>
+    <tr *ngFor="let item of data" >
+
+      <!--<td contenteditable="true">{{ item.Nombre }}</td>-->
+      <td contenteditable="true">{{ item.email }}</td>
+      <!--<td contenteditable="true">{{ item.password }}</td>-->
+      <td contenteditable="true">{{ item.role}}</td>
+      <td>
+        <button (click)="updateData(item.id)">
+          Update
+        </button>
+      </td>
+    </tr>
+  </table>
+
+
+<!--<ul>
+  <li *ngFor="let item of data" >
+    <p contenteditable="true">
+    {{ item.email }}
+    {{ item.name }}
+    {{ item.password }}
+    </p>
+
+    <button (click)="updateData(item.id)">
+      Update
+    </button>
+
+    <button (click)="deleteData(item.id)">
+      Delete
+    </button>
+  </li>
+</ul>-->
+</div>
